@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Annerley Dental Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 210 24% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 24% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 24% 16%;
+
+    /* Primary: Dental Teal (inspired by the logo) */
+    --primary: 174 62% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 174 62% 87%;
+    --primary-dark: 174 62% 27%;
+
+    /* Secondary: Clean Medical Blue */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 24% 16%;
+
+    /* Accent: Warm Professional Teal */
+    --accent: 180 25% 94%;
+    --accent-foreground: 174 62% 47%;
+
+    /* Trust & Medical Colors */
+    --trust: 210 100% 50%;
+    --trust-foreground: 0 0% 100%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 12% 47%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 174 62% 47%;
+
+    --radius: 0.75rem;
+
+    /* Dental Practice Specific Colors */
+    --dental-blue: 210 100% 50%;
+    --dental-green: 142 71% 45%;
+    --dental-light: 210 20% 98%;
+    --dental-dark: 210 24% 16%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 62% 47%), hsl(174 62% 57%));
+    --gradient-trust: linear-gradient(135deg, hsl(210 100% 50%), hsl(174 62% 47%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 98%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(174 62% 47% / 0.1);
+    --shadow-card: 0 2px 10px hsl(210 12% 47% / 0.1);
+    --shadow-button: 0 2px 8px hsl(174 62% 47% / 0.2);
+
+    /* Sidebar */
+    --sidebar-background: 210 20% 98%;
+    --sidebar-foreground: 210 24% 16%;
+    --sidebar-primary: 174 62% 47%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 94%;
+    --sidebar-accent-foreground: 210 24% 16%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 174 62% 47%;
+  }
+
+  .dark {
+    --background: 210 24% 9%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 24% 11%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 24% 11%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 174 62% 57%;
+    --primary-foreground: 210 24% 9%;
+    --primary-light: 174 62% 67%;
+    --primary-dark: 174 62% 37%;
+
+    --secondary: 210 24% 16%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 210 24% 16%;
+    --muted-foreground: 210 12% 65%;
+
+    --accent: 210 24% 16%;
+    --accent-foreground: 174 62% 57%;
+
+    --trust: 210 100% 60%;
+    --success: 142 71% 55%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 210 24% 9%;
+
+    --border: 210 24% 20%;
+    --input: 210 24% 20%;
+    --ring: 174 62% 57%;
+
+    --dental-blue: 210 100% 60%;
+    --dental-green: 142 71% 55%;
+    --dental-light: 210 24% 16%;
+    --dental-dark: 210 20% 95%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(174 62% 57%), hsl(174 62% 67%));
+    --gradient-trust: linear-gradient(135deg, hsl(210 100% 60%), hsl(174 62% 57%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210 24% 9%), hsl(210 24% 11%));
+
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 2px 10px hsl(0 0% 0% / 0.2);
+    --shadow-button: 0 2px 8px hsl(174 62% 57% / 0.3);
+
+    --sidebar-background: 210 24% 9%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 174 62% 57%;
+    --sidebar-primary-foreground: 210 24% 9%;
+    --sidebar-accent: 210 24% 16%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 210 24% 20%;
+    --sidebar-ring: 174 62% 57%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
